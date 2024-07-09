@@ -6,6 +6,8 @@ class Personas {
   }
   saludar(esMayor) {
     console.log(`Hola, mi nombre es ${this.Nombre}, tengo ${this.Edad} años, y mi género es ${this.Sexo}. ¿soy mayor de edad? ${esMayor ? 'Sí' : 'No'}.`);
+    alert(`Hola, mi nombre es ${this.Nombre}, tengo ${this.Edad} años, y mi género es ${this.Sexo}. ¿soy mayor de edad? ${esMayor ? 'Sí' : 'No'}.`);
+
   }
 
   static esMayorDeEdad(Edad){
@@ -19,6 +21,8 @@ class Estudiante extends Personas{
     }
     estudiar(){
         console.log(`  y bueno actualmente estoy estudiando ${this.Carrera}.`)
+        alert(`  y bueno actualmente estoy estudiando ${this.Carrera}.`)
+        
     }
 }
 
@@ -40,7 +44,15 @@ document.addEventListener('DOMContentLoaded',()=>{
         
         persona1.saludar(esMayor);
         Estudiante1.estudiar();
-});
-});
+        window.location.href = 'animal.html';
+    });
+  
+    // Evento para el botón de redirección
+    const redirectToAnotherPageBtn = document.getElementById('redirectToAnotherPage');
+    redirectToAnotherPageBtn.addEventListener('click', () => {
+      window.location.href = 'animal.html';
+    });
+  });
+
 
 

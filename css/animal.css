@@ -1,0 +1,51 @@
+@import url(variable.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: linear-gradient(to right, #6a11cb, #d0d2d6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.animal, .perro {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Transición suave para los elementos .animal y .perro */
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el botón */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
