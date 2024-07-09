@@ -4,10 +4,12 @@ class Personas {
     this.Edad = Edad;
     this.Sexo = Sexo ;
   }
+  saludar(esMayor) {
+    console.log(`Hola, mi nombre es ${this.Nombre}, tengo ${this.Edad} años, y mi género es ${this.Sexo}. ¿soy mayor de edad? ${esMayor ? 'Sí' : 'No'}.`);
+  }
 
-
-  saludar() {
-    console.log(`Hola, mi nombre  es ${this.Nombre}, tengo ${this.Edad} años, y mi genero es... ${this.Sexo},`)
+  static esMayorDeEdad(Edad){
+      return Edad >= 18;
   }
 }
 class Estudiante extends Personas{
@@ -16,7 +18,7 @@ class Estudiante extends Personas{
         this.Carrera = Carrera;
     }
     estudiar(){
-        console.log(`actualmente estoy estudiando ${this.Carrera}.`)
+        console.log(`  y bueno actualmente estoy estudiando ${this.Carrera}.`)
     }
 }
 
@@ -31,14 +33,13 @@ document.addEventListener('DOMContentLoaded',()=>{
         const sexo = document.getElementById('gender').value;
         const carrera = document.getElementById('carrera').value; 
 
-
+    
         const persona1 = new Personas(nombre, edad, sexo, );
         const Estudiante1 = new Estudiante(nombre, edad, sexo, carrera);
-
+        const esMayor = Personas.esMayorDeEdad(persona1.Edad);
         
-        persona1.saludar();
+        persona1.saludar(esMayor);
         Estudiante1.estudiar();
-
 });
 });
 
