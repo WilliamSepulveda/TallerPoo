@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vehículo y Coche</title>
+        <link rel="stylesheet" href="../css/vehiculo.css">
+        <script  src="../js/vehiculo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Datos del Vehículo</h1>
+        <form id="vehiculoForm">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+            
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+            
+            <label for="velocidad">Velocidad:</label>
+            <input type="number" id="velocidad" name="velocidad" required>
+            
+            <button type="button" onclick="crearVehiculo()">Crear Vehículo</button>
+        </form>
+        
+        <div id="Acelerar-vehiculo"></div>
+
+        <h1>Datos del Coche</h1>
+        <form id="cocheForm">
+            <label for="marcaCoche">Marca:</label>
+            <input type="text" id="marcaCoche" name="marcaCoche" required>
+            
+            <label for="modeloCoche">Modelo:</label>
+            <input type="text" id="modeloCoche" name="modeloCoche" required>
+            
+            <label for="velocidadCoche">Velocidad:</label>
+            <input type="number" id="velocidadCoche" name="velocidadCoche" required>
+            
+            <label for="combustible">Combustible:</label>
+            <input type="text" id="combustible" name="combustible" required>
+            
+            <button type="button" onclick="crearCoche()">Crear Coche</button>
+        </form>
+        
+        <div id="velocidad-coche"></div>
+        <li class="boton">
+            <a href="../views/empleado.html">
+              <p>siguiente ejercicio</p>
+            </a>
+        </li>
+    </div>
+</body>
+</html>
