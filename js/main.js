@@ -44,15 +44,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         
         persona1.saludar(esMayor);
         Estudiante1.estudiar();
-        window.location.href = 'animal.html';
-    });
+   });
   
-    // Evento para el botón de redirección
-    const redirectToAnotherPageBtn = document.getElementById('redirectToAnotherPage');
-    redirectToAnotherPageBtn.addEventListener('click', () => {
-      window.location.href = 'animal.html';
-    });
-  });
-
+  })  
 
 
