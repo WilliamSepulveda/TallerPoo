@@ -4,7 +4,7 @@ class Animal {
       this.Edad = Edad;
   }
 
-  HacerSonido() {
+    HacerSonido() {
       console.log(`${this.Nombre} hace un sonido.`);
       alert(`${this.Nombre} hace un sonido.`);
   }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Áreas</title>
+  <link rel="stylesheet" href="../css/figura.css">
+  <script defer src="../js/figura.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cálculo de Áreas</h1>
+
+    <!-- Formulario para ingresar datos -->
+    <form id="circleForm">
+      <h2>Círculo</h2>
+      <div class="form-group">
+        <label for="radius">Radio:</label>
+        <input type="number" id="radius" name="radius" required>
+      </div>
+      <button type="submit">Calcular Área</button>
+    </form>
+
+    <form id="rectangleForm">
+      <h2>Rectángulo</h2>
+      <div class="form-group">
+        <label for="length">Largo:</label>
+        <input type="number" id="length" name="length" required>
+      </div>
+      <div class="form-group">
+        <label for="width">Ancho:</label>
+        <input type="number" id="width" name="width" required>
+      </div>
+      <button type="submit">Calcular Área</button>
+    </form>
+
+    <!-- Resultados -->
+    <div class="results">
+      <h2>Resultados</h2>
+      <div id="circleResult"></div>
+      <div id="rectangleResult"></div>
+    </div>
+  </div>
+</body>
+</html>
